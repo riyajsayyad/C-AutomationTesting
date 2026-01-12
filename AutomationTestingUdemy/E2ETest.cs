@@ -106,6 +106,8 @@ namespace AutomationTestingUdemy
             }
             Assert.That(actualProd, Is.EqualTo(expectedProd));
 
+            driver.Quit();
+
         }
     }
 }
