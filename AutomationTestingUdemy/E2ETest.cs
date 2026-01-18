@@ -7,8 +7,8 @@ using OpenQA.Selenium.Support.UI;
 
 namespace AutomationTestingUdemy
 {
-	public class E2ETest
-	{
+    public class E2ETest
+    {
         IWebDriver driver;
 
         [SetUp]
@@ -27,7 +27,7 @@ namespace AutomationTestingUdemy
         [Test]
         public void Test1()
         {
-            
+
 
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
@@ -100,15 +100,36 @@ namespace AutomationTestingUdemy
             // Get the all cart items and compare with expected items.
             IList<IWebElement> checkoutCards = driver.FindElements(By.CssSelector("h4 a"));
 
-            for(int i = 0; i < checkoutCards.Count; i++)
+            for (int i = 0; i < checkoutCards.Count; i++)
             {
                 actualProd[i] = checkoutCards[i].Text;
             }
             Assert.That(actualProd, Is.EqualTo(expectedProd));
 
-            driver.Quit();
+            // Click on Checkout button in cart section
+            driver.FindElement(By.CssSelector(".btn-success")).Click();
 
+            //Enter the contry in textbox
+            driver.FindElement(By.Id("country")).SendKeys("Ind");
+
+            // Wait until options are visible
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.LinkText("India")));
+
+            // Click on India option
+            driver.FindElement(By.LinkText("India")).Click();
+
+            // Click on checkbox
+            driver.FindElement(By.CssSelector(".checkbox label")).Click();
+
+            //Click on purchase button
+            driver.FindElement(By.CssSelector("[value='Purchase']")).Click();
+            string SuccessText = driver.FindElement(By.CssSelector(".alert-success")).Text;
+            TestContext.WriteLine(SuccessText);
+
+            StringAssert.Contains("Success! Thank you!", SuccessText);
+
+            driver.Quit();
         }
     }
-}
 
+}
