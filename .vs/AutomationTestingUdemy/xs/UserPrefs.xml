@@ -1,31 +1,50 @@
 ﻿<Properties StartupConfiguration="{41AA5B4C-A60D-408E-8361-BC6E37170266}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AutomationTestingUdemy PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AutomationTestingUdemy/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.CSharpSelFramework FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AutomationTestingUdemy/E2ETest.cs">
     <Files>
-      <File FileName="AutomationTestingUdemy/UnitTest1.cs" Line="12" Column="11" />
-      <File FileName="AutomationTestingUdemy/Program.cs" Line="5" Column="3" />
-      <File FileName="AutomationTestingUdemy/Usings.cs" />
+      <File FileName="AutomationTestingUdemy/UnitTest1.cs" Line="23" Column="6" />
+      <File FileName="AutomationTestingUdemy/FirstTest.cs" Line="19" Column="1" />
+      <File FileName="AutomationTestingUdemy/Locators.cs" Line="57" Column="55" />
+      <File FileName="AutomationTestingUdemy/E2ETest.cs" Line="111" Column="10" />
+      <File FileName="AutomationTestingUdemy/SortWebTables.cs" Line="22" Column="21" />
+      <File FileName="AutomationTestingUdemy/AlertAction.cs" Line="13" Column="16" />
+      <File FileName="AutomationTestingUdemy/ChildWindowHandle.cs" Line="41" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="AutomationTestingUdemy" expanded="True">
+          <Node name="AutomationTestingUdemy">
+            <Node name="AutomationTestingUdemy">
+              <Node name="E2ETest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="AutomationTestingUdemy">
             <Node name="AutomationTestingUdemy" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="AutomationTestingUdemy">
+                <Node name="AlertAction" expanded="True" />
+                <Node name="ChildWindowHandle" expanded="True" />
+                <Node name="E2ETest" expanded="True" />
+                <Node name="FirstTest" expanded="True" />
+                <Node name="Locators" expanded="True" />
+                <Node name="SortWebTables" expanded="True" />
+                <Node name="Tests" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/riyaz/Projects/AutomationTestingUdemy/AutomationTestingUdemy/SortWebTables.cs" relfile="AutomationTestingUdemy/SortWebTables.cs" line="58" column="1" />
+    <Breakpoint file="/Users/riyaz/Projects/AutomationTestingUdemy/AutomationTestingUdemy/SortWebTables.cs" relfile="AutomationTestingUdemy/SortWebTables.cs" line="66" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AutomationTestingUdemy PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
